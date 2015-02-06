@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:id="@+id/radioGroup1">
+        android:orientation ="horizontal"
+        android:id="@+id/frameRateRatioGroup"
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:text="Frame Rate"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:clickable="false"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_10fps"
+            android:text="10fps"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="20dp"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_15fps"
+            android:text="15fps"
+            android:checked="false"
+            android:layout_below="@+id/radio_10fps"
+            android:layout_alignLeft="@+id/radio_10fps"
+            android:layout_alignStart="@+id/radio_10fps" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_20fps"
+            android:text="20fps"
+            android:checked="false"
+            android:layout_below="@+id/radio_15fps"
+            android:layout_alignLeft="@+id/radio_15fps"
+            android:layout_alignStart="@+id/radio_15fps"
+            android:layout_alignRight="@+id/radio_15fps"
+            android:layout_alignEnd="@+id/radio_15fps" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25fps"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:layout_below="@+id/radio_20fps"
+            android:layout_alignLeft="@+id/radio_20fps"
+            android:layout_alignStart="@+id/radio_20fps" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30fps"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignLeft="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="700dp"
+        android:id="@+id/pixelRadioGroup"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/radioGroup1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:text="Pixels"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:clickable="false"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:id="@+id/option1"
+            android:text="1280x720" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="640x480"
+            android:id="@+id/option2"
+            android:checked="false"
+            android:layout_gravity="left" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="320x240"
+            android:id="@+id/option3"
+            android:checked="false"
+            android:layout_gravity="left" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:text="Parking Guidelines"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pixelRadioGroup"
+        android:layout_toEndOf="@+id/pixelRadioGroup"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:clickable="false"
+        android:freezesText="true"/>
+
+    <Switch
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:id="@+id/switch4"
+        android:layout_below="@+id/editText7"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7"
+        />
+
+</RelativeLayout>

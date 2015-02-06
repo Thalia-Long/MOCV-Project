@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MOCV-AndroidStudio</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="view">
+        <item>FrontCam</item>
+        <item>BackCam</item>
+        <item>OBDII</item>
+    </string-array>
+    <string name="title_activity_activity2">Activity2</string>
+
+</resources>

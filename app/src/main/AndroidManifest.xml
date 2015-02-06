@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hienlong.mocv_androidstudio" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Front-Camera"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OBDII"
+            android:label="OBDII"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BackCamera"
+            android:label="Back-Camera"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+        </activity>
+        <activity
+            android:name=".frontCamSetting"
+            android:label="Setting"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+        </activity>
+        <activity
+            android:name=".backCamSetting"
+            android:label="Setting"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+        </activity>
+        <activity
+            android:name=".obdSetting"
+            android:label="Setting"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
