@@ -27,10 +27,10 @@
             android:text="10fps"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="20dp"
-            android:checked="false"
+            android:checked="true"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/radioGroup"
-            android:layout_toEndOf="@+id/radioGroup" />
+            android:layout_toEndOf="@+id/radioGroup"/>
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="false"
+            android:checked="true"
             android:id="@+id/option1"
             android:text="1280x720" />
 
