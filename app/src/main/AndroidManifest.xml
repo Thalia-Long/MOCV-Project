@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hienlong.mocv_androidstudio" >
+    package="com.hienlong.mocv_8"
+    android:versionCode="8"
+    android:versionName="8.0">
+
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <!-- Permissions to access the hardware and internet-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission  android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.microphone" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/automotive"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="Front-Camera"
+            android:name="com.hienlong.mocv_8.MainActivity"
+            android:label="MOCV_v8.0"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,51 +38,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OBDII"
+            android:name="com.hienlong.mocv_8.OBDII"
             android:label="OBDII"
+            android:noHistory="true"
             android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.hienlong.mocv_8.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+                android:value="com.hienlong.mocv_8.MainActivity" />
         </activity>
         <activity
-            android:name=".BackCamera"
+            android:name="com.hienlong.mocv_8.BackCamera"
             android:label="Back-Camera"
+            android:noHistory="true"
             android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.hienlong.mocv_8.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+                android:value="com.hienlong.mocv_8.MainActivity" />
         </activity>
         <activity
-            android:name=".frontCamSetting"
-            android:label="Setting"
+            android:name="com.hienlong.mocv_8.frontCamSetting"
+            android:label="Settings"
             android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.hienlong.mocv_8.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+                android:value="com.hienlong.mocv_8.MainActivity" />
         </activity>
         <activity
-            android:name=".backCamSetting"
-            android:label="Setting"
+            android:name="com.hienlong.mocv_8.backCamSetting"
+            android:label="Settings"
             android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.hienlong.mocv_8.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+                android:value="com.hienlong.mocv_8.MainActivity" />
         </activity>
         <activity
-            android:name=".obdSetting"
-            android:label="Setting"
+            android:name="com.hienlong.mocv_8.obdSetting"
+            android:label="Settings"
             android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.hienlong.mocv_8.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.hienlong.mocv_androidstudio.MainActivity" />
+                android:value="com.hienlong.mocv_8.MainActivity" />
         </activity>
-
+        <service
+            android:name="com.hienlong.mocv_8.BackgroundVideoRecorder"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/service_name"
+            />
+        <activity android:name="com.hienlong.mocv_8.SettingsActivity"/>
     </application>
 
 </manifest>

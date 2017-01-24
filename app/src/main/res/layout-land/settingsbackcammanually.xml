@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link for the cam streaming"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/edittextlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:title="Video URL"
+        android:background="@color/background_material_light">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1save"
+        android:onClick="buttonOnClick"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -8,8 +8,9 @@
     <string-array name="view">
         <item>FrontCam</item>
         <item>BackCam</item>
-        <item>OBDII</item>
+        <item>AUX</item>
+        <item>Maps</item>
     </string-array>
     <string name="title_activity_activity2">Activity2</string>
-
+    <string name="service_name">Background Video Recorder</string>
 </resources>
